@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/lrtk.css" />
+	<script type="text/javascript" src="js/jquery-3.0.0.min.js"></script>
+	<script type="text/javascript" src="js/jquery.imgbox.pack.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$("#example1-1").imgbox();
+
+			$("#example1-2").imgbox({
+			    'zoomOpacity'	: true,
+				'alignment'		: 'center'
+			});
+
+			$("#example1-3").imgbox({
+				'speedIn'		: 0,
+				'speedOut'		: 0
+			});
+
+			$("#example2-1, #example2-2").imgbox({
+				'speedIn'		: 0,
+				'speedOut'		: 0,
+				'alignment'		: 'center',
+				'overlayShow'	: true,
+				'allowMultiple'	: false
+			});
+		});
+	</script>
+</head>
+<body>
+	<div id="content">
+		<h1>imgBox</h1>
+		<hr />
+		<div id="images">
+		
+			<a id="example1-1" title="" href="images/test.jpg"><img alt="" src="images/test.jpg" /></a>
+			
+
+		</div>
+		
+		<div id="credit"></div>
+	</div>
+
+</body>
+</html>
